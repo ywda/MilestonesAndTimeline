@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r1e-Pf-ZwK">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a9g-SR-EJn" customClass="jwAutoStepView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="10000"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="700" id="wg7-su-Heg"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="wg7-su-Heg"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="wg7-su-Heg"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="giv-kW-bhI" appends="YES" id="ir6-Pk-4gb"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="a9g-SR-EJn" firstAttribute="top" secondItem="r1e-Pf-ZwK" secondAttribute="top" id="5bO-Zq-jo4"/>
+                                    <constraint firstItem="a9g-SR-EJn" firstAttribute="leading" secondItem="r1e-Pf-ZwK" secondAttribute="leading" id="5pW-6l-ll5"/>
+                                    <constraint firstItem="a9g-SR-EJn" firstAttribute="centerX" secondItem="r1e-Pf-ZwK" secondAttribute="centerX" id="6HO-nF-0zf"/>
+                                    <constraint firstAttribute="trailing" secondItem="a9g-SR-EJn" secondAttribute="trailing" id="hna-5l-Frv"/>
+                                    <constraint firstAttribute="bottom" secondItem="a9g-SR-EJn" secondAttribute="bottom" id="m1S-N8-pfc"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="a9g-SR-EJn"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="5bO-Zq-jo4"/>
+                                        <exclude reference="5pW-6l-ll5"/>
+                                        <exclude reference="6HO-nF-0zf"/>
+                                        <exclude reference="hna-5l-Frv"/>
+                                        <exclude reference="m1S-N8-pfc"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="a9g-SR-EJn"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="5bO-Zq-jo4"/>
+                                        <include reference="5pW-6l-ll5"/>
+                                        <include reference="6HO-nF-0zf"/>
+                                        <include reference="hna-5l-Frv"/>
+                                        <include reference="m1S-N8-pfc"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="r1e-Pf-ZwK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1C4-K7-gDY"/>
+                            <constraint firstAttribute="trailing" secondItem="r1e-Pf-ZwK" secondAttribute="trailing" id="3vA-YQ-Ycv"/>
+                            <constraint firstItem="r1e-Pf-ZwK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DI6-Om-uHN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r1e-Pf-ZwK" secondAttribute="bottom" id="Gpm-qT-nSJ"/>
+                            <constraint firstItem="r1e-Pf-ZwK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WOK-8t-0hM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="r1e-Pf-ZwK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Gpm-qT-nSJ"/>
+                                <exclude reference="1C4-K7-gDY"/>
+                                <exclude reference="3vA-YQ-Ycv"/>
+                                <exclude reference="DI6-Om-uHN"/>
+                                <exclude reference="WOK-8t-0hM"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="r1e-Pf-ZwK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Gpm-qT-nSJ"/>
+                                <include reference="1C4-K7-gDY"/>
+                                <include reference="3vA-YQ-Ycv"/>
+                                <include reference="DI6-Om-uHN"/>
+                                <include reference="WOK-8t-0hM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="scrol_view_h" destination="wg7-su-Heg" id="iMC-Gh-aIu"/>
+                        <outlet property="stepView" destination="a9g-SR-EJn" id="siu-Ds-P6j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="giv-kW-bhI">
+                    <connections>
+                        <action selector="refresh_tap_act:" destination="BYZ-38-t0r" id="TPX-eC-YAj"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="w1a-Ke-VS7"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="429"/>
+        </scene>
+    </scenes>
+</document>
